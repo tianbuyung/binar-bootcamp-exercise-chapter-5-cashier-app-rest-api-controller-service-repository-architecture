@@ -1,0 +1,66 @@
+[
+  {
+    "name": "nasi goreng",
+    "price": 15000,
+    "quantity": 10,
+    "id": 1,
+    "status": true
+  },
+  {
+    "name": "Nasi rendang",
+    "price": 25000,
+    "quantity": 10,
+    "id": 2,
+    "status": true
+  },
+  {
+    "name": "Nasi dendeng",
+    "price": 23000,
+    "quantity": 8,
+    "id": 3,
+    "status": false
+  },
+  {
+    "name": "Cah kangkung",
+    "price": 8000,
+    "quantity": 6,
+    "id": 4,
+    "status": true
+  },
+  { "name": "Bakwan", "price": 1500, "quantity": 5, "id": 5, "status": false },
+  {
+    "name": "Fuyunghai",
+    "price": 15000,
+    "quantity": 6,
+    "id": 6,
+    "status": true
+  },
+  {
+    "name": "Pisang goreng",
+    "price": 1000,
+    "quantity": 3,
+    "id": 7,
+    "status": true
+  },
+  {
+    "name": "Lontong sayur",
+    "price": 8000,
+    "quantity": 12,
+    "id": 8,
+    "status": true
+  },
+  {
+    "name": "Teh Manis Hangat",
+    "price": 3000,
+    "quantity": 15,
+    "id": 9,
+    "status": true
+  },
+  {
+    "name": "Es teh manis",
+    "price": 5000,
+    "quantity": 20,
+    "id": 10,
+    "status": true
+  }
+]
