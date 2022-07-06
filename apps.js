@@ -5,8 +5,8 @@ const express = require("express");
 // import logger
 const morgan = require("morgan");
 // import routes
-const indexRouter = require("./routes/index");
-const menuRouter = require("./routes/menus");
+const indexRouter = require("./routes/indexRoute");
+const menuRouter = require("./routes/menuRoute");
 // import middleware
 const clientError = require("./middleware/clientError");
 const serverError = require("./middleware/serverError");
