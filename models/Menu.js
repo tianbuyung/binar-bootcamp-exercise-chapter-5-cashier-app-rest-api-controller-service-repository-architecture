@@ -37,12 +37,13 @@ class Menu extends Model {
   }
   updateMenuById(id, payload) {
     const { name, price, quantity } = payload;
+    console.log(payload);
     const db = this.#getPathDb();
     let menus = super.getAllData();
     menus[id - 1] = {
       name: name,
-      price: price,
-      quantity: quantity,
+      price: Number(price),
+      quantity: Number(quantity),
       id: Number(id),
       status: true,
     };
