@@ -70,9 +70,9 @@ function getMenuById(id) {
       let ulPost = document.getElementById("menus");
       let content = `<li>
       <br>id: ${data[0].id}
-      <br> name <input type="text" id="name" value="${data[0].name}">
-      <br> price <input type="number" id="price" value="${data[0].price}">
-      <br> quantity <input type="number" id="quantity" value="${data[0].quantity}">
+      <br> name <input type="text" id="name${data[0].id}" value="${data[0].name}">
+      <br> price <input type="number" id="price${data[0].id}" value="${data[0].price}">
+      <br> quantity <input type="number" id="quantity${data[0].id}" value="${data[0].quantity}">
       <br><button onclick="editMenuById(${data[0].id})" id="editMenuById">Edit Menu</button>
       <br><button onclick="deleteMenuById(${data[0].id})" id="deleteMenuById">Delete Menu</button></li>`;
       ulPost.innerHTML = content;
@@ -81,15 +81,14 @@ function getMenuById(id) {
 }
 
 function editMenuById(id) {
-  const name = document.getElementById("name").value;
-  const price = document.getElementById("price").value;
-  const quantity = document.getElementById("quantity").value;
+  const name = document.getElementById(`name${id}`).value;
+  const price = document.getElementById(`price${id}`).value;
+  const quantity = document.getElementById(`quantity${id}`).value;
   const data = {
     name,
     price,
     quantity,
   };
-  console.log(data);
   fetch(`http://localhost:3000/menu/${id}`, {
     method: "PUT", // or 'PUT'
     headers: {
